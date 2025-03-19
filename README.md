@@ -16,6 +16,12 @@ Break Through Tech, a year long program designed to mentor and help undergraduat
 ## Data Exploration 
 All data was provided by Kaggle. The dataset is a subset of the FitzPatrick17k dataset, a labeled collection of about 17,000 images depicting a variety of serious (e.g., melanoma) and cosmetic (e.g., acne) dermatological conditions with a range of skin tones scored on the FitzPatrick skin tone scale (FST). More information can be found in this [video](https://www.youtube.com/watch?v=bizJpy5VQmQ) regarding the dataset. About 4500 images are in this set, representing 21 skin conditions out of the 100+ in the full FitzPatrick set.
 
+For the data exploration, a multi-class classification approach was used. Since there are 21 possible skin conditions, it was important to have multiple classes rather than just simple classification. As an initial approach, a small convolutional neural network (CNN) model with residual connections, separable convolutions, and batch normalization was built to examine the data. Our model was trained using 12 epochs. In future iterations, a pre-trained model would instead be used to improve accuracy. 
+
+As part of our data exploration, 2 figures are shown below.
+
+The first visualization reveals all of the layers in our model, and the settings we applied for each one. 
+
 ## Model Development
 ## Results & Key Findings
 ## Impact Narrative
