@@ -18,7 +18,7 @@ All data was provided by Kaggle. The dataset is a subset of the FitzPatrick17k d
 
 For the data exploration, a multi-class classification approach was used. Since there are 21 possible skin conditions, it was important to have multiple classes rather than just simple classification. As an initial approach, a small convolutional neural network (CNN) model with residual connections, separable convolutions, and batch normalization was built to examine the data. Our model was trained using 12 epochs. In future iterations, a pre-trained model would instead be used to improve accuracy. 
 
-As part of our data exploration, 2 figures are shown below.
+As part of our data exploration and model creation, 2 figures are shown below.
 
 The most important step when starting out was being able to understand the data and its distribution. So, this first visual displays the spread of the data and the 21 diseases we were working with.
 ![Second Visual](https://github.com/gloriapul/AJL-Project/blob/main/value_counts.png)
