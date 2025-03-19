@@ -2,6 +2,7 @@
 Information about our approach to the Break Through Tech AJL Kaggle team project. 
 
 ## Team Members
+- [Ashley Lopez](https://github.com/ashleylopezm)
 - [Gloria P](https://github.com/gloriapul)
 
 ## Project Highlights
