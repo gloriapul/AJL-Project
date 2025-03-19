@@ -4,6 +4,7 @@ Information about our approach to the Break Through Tech AJL Kaggle team project
 ## Team Members
 - [Ashley Lopez](https://github.com/ashleylopezm)
 - [Gloria P](https://github.com/gloriapul)
+- [Glenvelis Perez](https://github.com/gperez42)
 
 ## Project Highlights
 This Kaggle project is hosted by [Break Through Tech](https://www.breakthroughtech.org/) and the [Algorithmic Justice League (AJL)](https://www.ajl.org/about). The goal of the project was to create a model that could classify 21 different skin conditions across diverse skin tones! Techniques used in Break Through Tech resources related to image processing and transfer learning were part of the core of our work. Throughout this project, our team learned more about algorithm fairness and the pros and cons of building a model from scratch compared to using a pre-trained model. 
