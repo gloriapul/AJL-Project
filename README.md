@@ -20,7 +20,11 @@ For the data exploration, a multi-class classification approach was used. Since 
 
 As part of our data exploration, 2 figures are shown below.
 
-The first visualization reveals all of the layers in our model, and the settings we applied for each one. 
+The first visualization reveals all of the layers in our CNN model, and the settings we applied for each one. As seen, more work can continue to be done to adjust the settings if our regular CNN model were to be used. 
+
+![First Visual](https://github.com/gloriapul/AJL-Project/blob/main/layers.png)
+
+The second visualization reveals all of the layers in our CNN model, and the settings we applied for each one. As seen, more work can continue to be done to adjust the settings if our regular CNN model were to be used. 
 
 ## Model Development
 ## Results & Key Findings
