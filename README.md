@@ -20,11 +20,12 @@ For the data exploration, a multi-class classification approach was used. Since 
 
 As part of our data exploration, 2 figures are shown below.
 
-The first visualization reveals all of the layers in our CNN model, and the settings we applied for each one. As seen, more work can continue to be done to adjust the settings if our regular CNN model were to be used. 
-
-![First Visual](https://github.com/gloriapul/AJL-Project/blob/main/layers.png)
+The most important step when starting out was being able to understand the data and its distribution. So, this first visual displays the spread of the data and the 21 diseases we were working with.
+![Second Visual](https://github.com/gloriapul/AJL-Project/blob/main/value_counts.png)
 
 The second visualization reveals all of the layers in our CNN model, and the settings we applied for each one. As seen, more work can continue to be done to adjust the settings if our regular CNN model were to be used. 
+
+![Second Visual](https://github.com/gloriapul/AJL-Project/blob/main/layers.png)
 
 ## Model Development
 ## Results & Key Findings
