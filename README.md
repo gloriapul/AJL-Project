@@ -33,7 +33,7 @@ The second visualization reveals all of the layers in our CNN model, and the set
 ![Second Visual](https://github.com/gloriapul/AJL-Project/blob/main/layers.png)
 
 ## Model Development
-We used a custom CNN model built using TensorFlow and Keras for the WiDS 2025 Brain Activity/ADHD classification challenge. The architecture drew inspiration from Xception-style networks, incorporating:
+We used a custom CNN model built using TensorFlow and Keras for the AJL 2025 Challenge. The architecture drew inspiration from Xception-style networks, incorporating:
 * SeparableConv2D layers to reduce parameters and computational cost
 * BatchNormalization, Dropout, and GlobalAveragePooling for regularization and generalization
 * Residual connections for deeper, stable learning
