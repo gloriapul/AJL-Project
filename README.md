@@ -33,6 +33,28 @@ The second visualization reveals all of the layers in our CNN model, and the set
 ![Second Visual](https://github.com/gloriapul/AJL-Project/blob/main/layers.png)
 
 ## Model Development
+We used a custom CNN model built using TensorFlow and Keras for the WiDS 2025 Brain Activity/ADHD classification challenge. The architecture drew inspiration from Xception-style networks, incorporating:
+* SeparableConv2D layers to reduce parameters and computational cost
+* BatchNormalization, Dropout, and GlobalAveragePooling for regularization and generalization
+* Residual connections for deeper, stable learning
+
+It was also important to feature engineer and tune our hyperparameters. Data preprocessing included normalization (Rescaling) and resizing images to 180x180. We also used data augmentation strategies such as horizontal flipping and rotation to help prevent overfitting. Our hyperparameters were also manually tuned, with a batch size: 32 (optimized for Colab's memory), epochs: 12, and learning rate: 3e^-4 (using the Adam optimizer). A ModelCheckpoint callback also saved model weights per epoch. For training setup, the dataset was split using image_dataset_from_directory with a 80/20 train-validation split. Evaluation metric during training was binary accuracy, and Binary Crossentropy was used as the loss function (with logits).
+
 ## Results & Key Findings
+Regarding our overall performance, our initial custom CNN model achieved limited accuracy on validation data, which we expected given its lightweight architecture and limited training epochs. It was valuable as a baseline to explore the dataset and begin testing predictions. The model training was done over 12 epochs, and we applied data augmentation (ex: flipping, rotation) to improve generalization. 
+
+For fairness across skin tones,fFairness was a core motivation, as the project centered around equitable dermatological diagnosis across Fitzpatrick skin tones. However, explicit subgroup performance metrics (ex: per-tone accuracy, confusion matrices by tone) were not implemented in this initial version. 
+
 ## Impact Narrative
+This project was created because fairness in skin condition classification **matter**. Skin condition detection AI models have historically shown bias against darker skin tones, leading to misdiagnoses, delayed treatment, and widening health disparities. Our work contributes to addressing these gaps by building and evaluating models using a diverse dataset (Fitzpatrick17k), helping ensure that dermatological tools serve all skin tones equitably.
+
+Our project could support early detection of dermatological issues across all skin tones, awareness in the ML community of the risks of biased training data, or even development of more inclusive medical AI tools. Our initial model is a first step. With future improvements like pre-trained architectures and fairness audits, this work could help pave the way for clinically relevant and ethically responsible diagnostic AI in dermatology.
+
 ## Next Steps & Future Improvements
+Our initial model was a relatively simple convolutional neural network (CNN) trained from scratch. While it helped us understand the dataset and build a foundation, it has a few key limitations:
+* **Limited accuracy** due to model complexity, data size, and short training duration (12 epochs).
+* **Resource constraints** (RAM, training time) prevented us from experimenting with larger architectures or more extensive hyperparameter tuning.
+
+Next time, we would explore supplementing the dataset with additional diverse dermatology datasets that include metadata for skin tone, age, or lighting conditions.
+
+Ultimately, we aim to create a model that not only performs well but also treats all skin tones equitably, helping close diagnostic gaps in dermatological care.
